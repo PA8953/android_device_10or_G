@@ -20,6 +20,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Build
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Kernel
@@ -30,10 +31,11 @@ BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boo
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := lineageos_holland2_defconfig
+KERNEL_DEFCONFIG := lineageos_holland2_defconfig
 TARGET_KERNEL_SOURCE := kernel/10or/G
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_VERSION := 4.9
+KERNEL_CUSTOM_LLVM := true
+KERNEL_SD_LLVM_SUPPORT := false
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -128,17 +130,11 @@ $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 41943040)) # 40 MB
 
-ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1500000000 # 1.5 GB
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 300000000 # 300 MB
-endif
-
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := msm8953
 TARGET_ENFORCES_QSSI := true
 TARGET_USES_UM_4_9 := true
 
@@ -160,7 +156,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
