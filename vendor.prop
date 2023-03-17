@@ -1,5 +1,4 @@
 # Audio
-af.fast_track_multiplier=2
 audio.deep_buffer.media=true
 audio.offload.disable=true
 audio.offload.min.duration.secs=30
@@ -9,11 +8,9 @@ persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.hw.binder.size_kbyte=1024
 ro.config.media_vol_steps=25
-ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.feature.anc_headset.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
-vendor.audio.feature.compr_voip.enable=true
 vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.fluence.enable=true
 vendor.audio.feature.fm.enable=true
@@ -23,7 +20,6 @@ vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.multi_voice_session.enable=true
 vendor.audio.feature.snd_mon.enable=true
-vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.src_trkn.enable=true
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=true
