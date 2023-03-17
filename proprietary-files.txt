@@ -517,39 +517,6 @@ vendor/lib64/vendor.qti.gnss@2.1.so|7f69b6098f779f6ed396bbf366b496b0b228c743
 vendor/lib64/vendor.qti.gnss@3.0-service.so|6b3c387f31f4cb91c8907362af4daa3f0cad7911
 vendor/lib64/vendor.qti.gnss@3.0.so|c5ed668d324e7c898ca026fc12dad8829cd8a944
 
-# Graphics - from T89571AA3-user 11 RKQ1.200928.002 00WW_3_240 release-keys
-vendor/lib/egl/eglSubDriverAndroid.so|ef519ee12656b4d9fcf3de343d161dd2761bf1f3
-vendor/lib/egl/libEGL_adreno.so|7b1ae9e2c4f44c4449db61b31e1860a8a584bbaf
-vendor/lib/egl/libGLESv1_CM_adreno.so|6c63055e6ac76dc5c7cd7842e697a66a71571f4b
-vendor/lib/egl/libGLESv2_adreno.so|f46a0c939487e9fe9611b200e89727d343092a4c
-vendor/lib/egl/libq3dtools_adreno.so|ba235613c40de6b3987ffcb5d3c39f177701eb60
-vendor/lib/egl/libq3dtools_esx.so|617a3d6a24bd4b1970b071248b950385f133bff3
-vendor/lib/hw/vulkan.adreno.so|f7e04bc036f108d490428e6f37691980c71dbb73
-vendor/lib/libC2D2.so|64e2a5a20312e5cb59c23b3a3a99bf8912946ed3
-vendor/lib/libOpenCL.so|86a24e408c852cab331f48a4341dc42bddc0fe17
-vendor/lib/libadreno_utils.so|fb9e3b608997e905490e861e2c573ebc92676ed6
-vendor/lib/libc2d30_bltlib.so|f3667f469dab7b3d5023785c6139819b557b3ed0
-vendor/lib/libgsl.so|53e2ea3ccf481560d018d178d60224df5a319d69
-vendor/lib/libllvm-glnext.so|5cef3ee6d93e081383a91a1808ada0218c9940d2
-vendor/lib/libmm-hdcpmgr.so|ea47b3c85cfd894945cd7a4412cdc3972ea67c78
-vendor/lib/libpvr.so|5e7b1788636d49b2ea3d02a1138c72cbc3b4c7ca
-vendor/lib64/egl/eglSubDriverAndroid.so|cd1cb25bfd16f15e0d7c6495493359838a1b6e96
-vendor/lib64/egl/libEGL_adreno.so|eb26e59665ec42a6889eea2ccf596b8f4e85c219
-vendor/lib64/egl/libGLESv1_CM_adreno.so|ebafbd6ce0caf448a5bcfd604cdfe115e3af520a
-vendor/lib64/egl/libGLESv2_adreno.so|d4fc69ac548926d82ee588619875fc62d1dbe3fe
-vendor/lib64/egl/libq3dtools_adreno.so|046be35d03cbea2c73a1339eefa1bffc87ab6ebc
-vendor/lib64/egl/libq3dtools_esx.so|e5077c45764087625b40a760e8dac1d8877c82a5
-vendor/lib64/hw/vulkan.adreno.so|f101bd7e86bd092285c4e7cbb45f5ac2734f2db7
-vendor/lib64/libC2D2.so|6fb775e393ce7161b30e3a71fa0f320e86374425
-vendor/lib64/libOpenCL.so|eb7fbc2972a022b645e422422cc77d00b103532f
-vendor/lib64/libadreno_utils.so|2667d141b8c87e0c1b1f3571243f8b9e80e6142c
-vendor/lib64/libc2d30_bltlib.so|8c8fef67e346be907e1f9b312d11a1e9606ad6f0
-vendor/lib64/libgsl.so|13db683d011feca5b2dd29259e7ba29f98b8b2eb
-vendor/lib64/libhdr_tm.so|cfd5f03dd37b5b6fb46d288bed619b780ec7343e
-vendor/lib64/libllvm-glnext.so|cc14fa4f73fba802c3e3c098b485eaf66d842b45
-vendor/lib64/libmm-hdcpmgr.so|14ba633fbef35ad3c684a440abb15d9e2c300537
-vendor/lib64/libpvr.so|b9d38b4d340e66a1d89861ce552f0405ce9bfa11
-
 # Graphics (Firmware) - from T89571AA3-user 11 RKQ1.200928.002 00WW_3_240 release-keys
 vendor/firmware/a530_pfp.fw|35b72dce880191ff087af2524205afce40ea8c97
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
